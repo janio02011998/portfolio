@@ -2,12 +2,12 @@ import React from 'react';
 
 import { Container, Title } from './styles';
 
-function Main() {
+function Contact(){
     return (
         <Container>
-            <Title>Main</Title>
+            <Title>Contato</Title>
         </Container>
     );
 }
 
-export default Main;
+export default Contact;
