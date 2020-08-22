@@ -4,18 +4,19 @@ import { NavLink } from 'react-router-dom';
 
 export const Container = styled.aside`
     display: flex;
-    flex-shrink: 0;
+    flex-shrink: 1;
     align-items: center;
-    width: 100px;
+    width: 300px;
     height: 100%;
-    background-image: linear-gradient(to bottom right, #009cde, #0073cc);
+    ${'' /* background-image: linear-gradient(to bottom, #D5D8DC, #17202A); */}
+    background-image: #EBEDEF;
     flex-direction: column;
 
     transition: all 0.2s ease 0s;
 
-    &:hover{
+    ${'' /* &:hover{
         width: 240px;
-    }
+    } */}
 `;
 
 export const SidebarLink = styled(NavLink)`
@@ -23,7 +24,7 @@ export const SidebarLink = styled(NavLink)`
   text-align: center;
   text-decoration: none;
   padding-top: 10px;
-  color: #eee;
+  color: #000;
   &:hover {
     color: #fff;
   }

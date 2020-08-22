@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Sidebar from './components/Sidebar';
 import Routes from './routes';
 
