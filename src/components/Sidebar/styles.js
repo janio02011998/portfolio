@@ -8,8 +8,8 @@ export const Container = styled.aside`
     align-items: center;
     width: 300px;
     height: 100%;
-    ${'' /* background-image: linear-gradient(to bottom, #D5D8DC, #17202A); */}
-    background-image: #EBEDEF;
+    background-image: linear-gradient(to bottom, #D5D8DC, #17202A);
+    ${'' /* background-image: #EBEDEF; */}
     flex-direction: column;
 
     transition: all 0.2s ease 0s;
