@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const Container = styled.aside`
-    ${'' /* display: flex;
+    display: flex;
     flex-shrink: 1;
     align-items: center;
     width: 300px;
@@ -16,7 +16,7 @@ export const Container = styled.aside`
 
     ${'' /* &:hover{
         width: 240px;
-    } */} */}
+    } */}
 `;
 
 export const SidebarLink = styled(NavLink)`

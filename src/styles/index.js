@@ -22,6 +22,6 @@ export default createGlobalStyle`
       text-rendering: optimizeLegibility !important;
       font-family: sans-serif;
       -webkit-font-smoothing: antialiased;
-      background: #eee;
+      background: #FFFFFF;
     }
 `;
