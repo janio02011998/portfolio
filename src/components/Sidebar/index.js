@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
 import { GrMail, GrGithub, GrFacebook, GrLinkedin, GrTwitter, GrInstagram, GrPhone } from 'react-icons/gr';
 import { FaBeer, FaHeart, FaBootstrap } from 'react-icons/fa';
+import { Navbar } from 'react-bootstrap';
 
-// import { Container, SidebarLink } from './styles';
-
-// function Sidebar() {
 export default class Sidebar extends Component {
     render() {
         return (
             <div className="bg-light">
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+                <Navbar expand="lg" variant="light" bg="light">
+                    <Navbar.Toggle aria-controls="navbarSupportedContent" />
+                    <Navbar.Collapse id="navbarSupportedContent">
 
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <div>
                             <div className="mb-2 text-center">
                                 <img className="img-fluid img-thumbnail rounded-circle" alt="Responsive" src={require('../../images/about.jpg')} />
@@ -48,25 +44,9 @@ export default class Sidebar extends Component {
                                 </small></p>
                             </div>
                         </div>
-                    </div>
-                </nav>
-
+                    </Navbar.Collapse>
+                </Navbar>
             </div>
-            // <Container>
-            //     <div class="container my-4">
-            //         <div class="row text-center">
-            //             <div class="col-md-6 mb-4 center">
-
-            //                 <img class="rounded-circle" alt="100x100" src={require('../../images/about.jpg')} />
-
-            //             </div>
-            //         </div>
-            //     </div>
-            //     <h2 class="my-5 h2">Jânio Carvalho </h2>
-            //     <SidebarLink to="/">INTRODUCTION</SidebarLink>
-            //     <SidebarLink to="/">ABOUT</SidebarLink>
-            //     <SidebarLink to="/contact">TIMELINE</SidebarLink>
-            // </Container>
         );
     }
 }
