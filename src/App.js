@@ -11,10 +11,12 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyle />
-      <Container>
+      {/* <Container> */}
+      <div className="d-flex">
         <Sidebar />
         <Routes />
-      </Container>
+      </div>
+      {/* </Container> */}
     </BrowserRouter>
   );
 }

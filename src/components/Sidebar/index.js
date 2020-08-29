@@ -8,7 +8,7 @@ export default class Sidebar extends Component {
         return (
             <div className="bg-light">
                 <Navbar expand="lg" variant="light" bg="light">
-                    <Navbar.Toggle aria-controls="navbarSupportedContent" />
+                    <Navbar.Toggle aria-controls="navbarSupportedContent" role/>
                     <Navbar.Collapse id="navbarSupportedContent">
 
                         <div>
@@ -21,10 +21,10 @@ export default class Sidebar extends Component {
                             <nav className="nav justify-content-center" role="navigation">
                                 <div className="text-center">
                                     <ul className="nav flex-column">
-                                        <li className="nav-item"><a className="btn btn-lg-2" href="/">INTRODUCTION</a></li>
-                                        <li className="nav-item"><a className="btn btn-lg-2" href="/about">ABOUT</a></li>
-                                        <li className="nav-item"><a className="btn btn-lg-2" href="/timeline">TIMELINE</a></li>
-                                        <li className="nav-item"><a className="btn btn-lg-2" href="/contact">CONTACT</a></li>
+                                        <li className="nav-item"><a className="btn btn-lg-2" href="/">Início</a></li>
+                                        <li className="nav-item"><a className="btn btn-lg-2" href="/about">Sobre</a></li>
+                                        <li className="nav-item"><a className="btn btn-lg-2" href="/timeline">Projetos</a></li>
+                                        <li className="nav-item"><a className="btn btn-lg-2" href="/contact">Contato</a></li>
                                     </ul>
                                 </div>
                             </nav>
