@@ -2,7 +2,7 @@
 	"name": "portfolio-app",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://github.com/janio02011998/portfolio",
+	"homepage": "https://janio02011998.github.io/portfolio",
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.30",
         "@fortawesome/free-brands-svg-icons": "^5.14.0",
