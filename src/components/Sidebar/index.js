@@ -5,7 +5,9 @@ import { Navbar } from 'react-bootstrap';
 
 export default class Menu extends Component {
   state = {
-    classStyle: "sidebar"
+    classStyle: "sidebar",
+    flag: false
+  
   };
 
   // handleSidebar(value) {
@@ -14,21 +16,28 @@ export default class Menu extends Component {
 
     handleSidebar = () => { 
      console.log("clicked");
-     this.setState({ classStyle: "sidebarR" }); 
+     if (this.state.flag == false){
+        this.setState({ classStyle: "sidebarR" });
+        this.setState({ flag: true}) 
+     } else {
+      this.setState({ classStyle: "sidebar" });
+      this.setState({ flag: false}) 
+     }
+    //  this.setState({ classStyle: "sidebarR" }); 
    }
 
 
   render() {
     return (
 
-      <div className="sidebar">
+      <div className={this.state.classStyle}>
       {/* <section className={this.state.classStyle}> */}
-        <Navbar bg="light" variant="light" sticky="top" expand="lg" >
+        <Navbar bg="light" variant="light" sticky="top" expand="lg"  >
           <Navbar.Toggle aria-controls="navbarSupportedContent" onClick={() => this.handleSidebar()} />
           <Navbar.Collapse id="navbarSupportedContent">
 
             <div>
-              <div className="mb-2 text-center">
+              <div className="mt-3 text-center">
                 <img className="img-fluid img-thumbnail rounded-circle" alt="Responsive" src={require('../../images/about.jpg')} />
                 <h1><a className="btn btn-lg font-weight-bold" href="/portfolio">Jânio Carvalho</a></h1>
                 <div className="nav flex-column">
@@ -36,15 +45,15 @@ export default class Menu extends Component {
                   <span className="badge badge-light"><GrPhone /> +55 73 99179-7661</span>
                 </div>
               </div>
-              <div className="text-center  mt-2">
+              <div className="text-center  mt-3">
                 <ul className="nav flex-column">
                   <li className="nav-item"><a className="btn btn-lg-2" href="#home">Início</a></li>
                   <li className="nav-item"><a className="btn btn-lg-2" href="#about">Sobre</a></li>
                   <li className="nav-item"><a className="btn btn-lg-2" href="#timelineContent">Timeline</a></li>
-                  <li className="nav-item"><a className="btn btn-lg-2" href="#contatc">Contato</a></li>
+                  {/* <li className="nav-item"><a className="btn btn-lg-2" href="#contatc">Contato</a></li> */}
                 </ul>
               </div>
-              <div className="text-center  mt-2">
+              <div className="text-center  mt-3">
                 <ul className="nav flex-column">
                   <div className="iconsmedia">
                     <li><a className="btn" href="https://www.facebook.com/Janio20/" target="_blank" rel="noopener noreferrer"><GrFacebook /></a></li>
